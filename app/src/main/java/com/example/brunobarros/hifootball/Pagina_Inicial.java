@@ -29,6 +29,7 @@ public class Pagina_Inicial extends AppCompatActivity {
     ArrayList<String> jogo = new ArrayList<String>();
     json jsonclass;
     SharedPreferences pref;
+    static String APPTAG = "HIFootballApp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,14 +44,14 @@ public class Pagina_Inicial extends AppCompatActivity {
         jsonclass = new json();
         PHPConnection phpc = new PHPConnection(this, jsonclass);
         try {
-            resj =phpc.execute(method).get();
-            Log.d("babarros", "0");
+            resj = phpc.execute(method).get();
+            Log.d(APPTAG, "0");
         } catch (InterruptedException e) {
             Toast.makeText(this, "Erro1", Toast.LENGTH_LONG).show();
-            Log.d("babarros", "1");
+            Log.d(APPTAG, "1");
         } catch (ExecutionException e) {
             Toast.makeText(this, "Erro2", Toast.LENGTH_LONG).show();
-            Log.d("babarros", "2");
+            Log.d(APPTAG, "2");
         }
 
         try {
@@ -58,9 +59,10 @@ public class Pagina_Inicial extends AppCompatActivity {
             //jsonArray = jsonObject.getJSONArray("");
             if (resj == null)
             {
-                Log.d("StrartAtivity", "entrou");
+                Log.d(APPTAG, "Entrou na StartActivity -> Pagina_Inicial");
+                Toast.makeText(this, "There was an error connecting to the backend!", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, Alterar_IP.class));
-                //finish();
+                finish();
             }
             else {
                 jsonArray = new JSONArray(resj);

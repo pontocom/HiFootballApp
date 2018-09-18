@@ -18,11 +18,15 @@ import java.util.concurrent.ExecutionException;
  */
 public class Alterar_IP extends Activity {
 
+    static String APPTAG = "HIFootballApp";
+    static String PREFSFILE = "HIFootballPrefsFile";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alterarip);
 
+        /*
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
@@ -30,8 +34,9 @@ public class Alterar_IP extends Activity {
         int altura = dm.heightPixels;
 
         getWindow().setLayout((int)(largura*.6),(int)(altura*.6));
+        */
 
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPrefs", 0);
+        SharedPreferences pref = getApplicationContext().getSharedPreferences(PREFSFILE, 0);
         final SharedPreferences.Editor editor = pref.edit();
 
         Button bt = (Button) findViewById(R.id.btinserir);
@@ -43,9 +48,9 @@ public class Alterar_IP extends Activity {
 
                 editor.putString("ip", ip.getText().toString());
                 editor.apply();
-                Log.i("HiFootball", "IP = " + ip.getText().toString());
+                Log.i(APPTAG, "IP = " + ip.getText().toString());
                 //editor.commit();
-                //finish();
+                finish();
                 startActivity(new Intent(getApplicationContext(), Pagina_Inicial.class));
             }
         });

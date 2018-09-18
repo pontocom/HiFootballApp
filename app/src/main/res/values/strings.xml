@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Hi Football</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_teste">teste</string>
+    <string name="title_activity_teste">test</string>
+    <string name="txt_lbl_ipaddress">Enter IP address:</string>
+    <string name="txt_btn_ipaddress">IP address</string>
+    <string name="txt_lbl_explain_ipaddress">Please enter the IP address of the backend server, because it will be necessary for the collection of the events on the application. Thank you!</string>
 </resources>

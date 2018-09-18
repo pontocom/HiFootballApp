@@ -1,4 +1,4 @@
-#Tue Sep 18 11:37:02 WEST 2018
+#Tue Sep 18 12:11:43 WEST 2018
 base.0=/Users/cserrao/Documents/Development/HiFootball/app/build/intermediates/transforms/dexMerger/debug/1
 path.0=classes.dex
 renamed.0=classes.dex

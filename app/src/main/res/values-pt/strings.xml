@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hi Football</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_teste">teste</string>
+    <string name="txt_lbl_ipaddress">Introduza o endereço IP:</string>
+    <string name="txt_btn_ipaddress">Endereço IP</string>
+    <string name="txt_lbl_explain_ipaddress">Por favor, introduza o endereço IP dp servidor de backend, porque será necessário contactar o mesmo para recolher os eventos anotados na aplicação. Obrigado.</string>
+</resources>
