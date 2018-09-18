@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="169dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="Fora Jogo"
+        android:id="@+id/forajogo"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <Button
+        android:layout_width="169dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="Falta"
+        android:id="@+id/falta"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/penalty"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="169dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="Penalty"
+        android:id="@+id/penalty"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/forajogo"
+        android:layout_toEndOf="@+id/forajogo" />
+    <Button
+        android:layout_width="169dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="Fora Jogo"
+        android:id="@+id/sforajogo"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <Button
+        android:layout_width="169dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="Falta"
+        android:id="@+id/sfalta"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignTop="@+id/spenalty"
+        android:layout_toRightOf="@+id/spenalty"
+        android:layout_toEndOf="@+id/spenalty" />
+    <Button
+        android:layout_width="169dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="Penalty"
+        android:id="@+id/spenalty"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignTop="@+id/sforajogo"
+        android:layout_toRightOf="@+id/sforajogo"
+        android:layout_toEndOf="@+id/sforajogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cometeu Infração"
+        android:id="@+id/textView"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sofreu uma Infração"
+        android:id="@+id/textView2"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/forajogo"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+</RelativeLayout>

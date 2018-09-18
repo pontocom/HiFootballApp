@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="amarelo">#FFFF00</color>
+    <color name="vermelho">#FF0000</color>
+    <color name="le">#D98719</color>
+    <color name="l">#FF7F00</color>
+    <color name="amareloes">#DBDB70</color>
+    <color name="va">#8C1717</color>
+</resources>
