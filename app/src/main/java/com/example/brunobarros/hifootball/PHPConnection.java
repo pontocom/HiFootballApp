@@ -32,7 +32,7 @@ import static android.support.v4.app.ActivityCompat.startActivityForResult;
 public class PHPConnection extends AsyncTask<String,Void,String> {
 
     Context ctx;
-    json dadosjogadores;
+    json dadosjogadores; // PlayerData
     String res = "";
     public static final String MyPREFERENCES = "MyPrefs";
     SharedPreferences sharedpreferences;
@@ -636,13 +636,13 @@ public class PHPConnection extends AsyncTask<String,Void,String> {
                 e.printStackTrace();
             }
         }
-        else if (method.equals("List_Jogos"))
+        else if (method.equals("List_Jogos")) // List games.
         {
             //Toast.makeText(ctx, "Listar_FuncaoUT", Toast.LENGTH_SHORT).show();
             String line = "", res = "";
 
             try {
-                URL url_LFUT = new URL(url+"List_Evento.php");
+                URL url_LFUT = new URL(url+"List_Evento.php"); // List Match
                 HttpURLConnection httpurlc2 = (HttpURLConnection) url_LFUT.openConnection();
                 httpurlc2.setRequestMethod("POST");
                 httpurlc2.setDoInput(true);
