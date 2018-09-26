@@ -1,6 +1,5 @@
 package com.example.brunobarros.hifootball;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -22,7 +20,6 @@ import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.nio.Buffer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -163,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void criarevento (View view)
     {
-        startActivity(new Intent(this, Criar_Evento.class));
+        startActivity(new Intent(this, CreateEvent.class));
     }
 
     @Override
@@ -187,22 +184,22 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.criar_evento) {
 
-            startActivity(new Intent(this, Criar_Evento.class));
+            startActivity(new Intent(this, CreateEvent.class));
         }
 
         if (id == R.id.pagina_inicial) {
 
-            startActivity(new Intent(this, Pagina_Inicial.class));
+            startActivity(new Intent(this, InitialPage.class));
         }
 
         if (id == R.id.historico) {
 
-            startActivity(new Intent(this, Historico.class));
+            startActivity(new Intent(this, History.class));
         }
 
         if (id == R.id.EquipaCasa) {
 
-            startActivity(new Intent(this, EquipadaCasa.class));
+            startActivity(new Intent(this, HomeTeam.class));
         }
 
         return super.onOptionsItemSelected(item);

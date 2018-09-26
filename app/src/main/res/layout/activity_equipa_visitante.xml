@@ -9,7 +9,7 @@
     android:paddingTop="0dp"
     android:background="@drawable/metadedocampodefutebol"
     android:rotationY="180"
-    tools:context="com.example.brunobarros.hifootball.EquipaVisitante">
+    tools:context="com.example.brunobarros.hifootball.VisitingTeam">
 
     <GridLayout
         android:orientation="vertical"

@@ -5,22 +5,20 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * Created by brunobarros on 23/08/17.
  */
 public class Pop extends Activity {
 
-    //Anotar_Eventos ae;
+    //AnnotateEvents ae;
     Context cxt, cxtAnotar;
     boolean longclik = false;
     String IdJ;
-    Anotar_Eventos ae;
-    Estado estado;
+    AnnotateEvents ae;
+    State estado;
     Intent im;
 
     @Override
@@ -33,9 +31,9 @@ public class Pop extends Activity {
 
         cxt = this;
 
-        estado = ((Estado) getApplicationContext());
-        ae = new Anotar_Eventos();
-        ae = (Anotar_Eventos) estado.getState();
+        state = ((State) getApplicationContext());
+        ae = new AnnotateEvents();
+        ae = (AnnotateEvents) state.getState();
 
         Toast.makeText(cxt, "OnCreate. IdJ: " + ae.idj, Toast.LENGTH_LONG).show();*/
 

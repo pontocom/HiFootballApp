@@ -58,7 +58,7 @@ public class Login extends Activity {
                         Toast.makeText(getApplicationContext(), resj, Toast.LENGTH_LONG).show();
                         editor.putString("login", resj);
                         editor.commit();
-                        startActivity(new Intent(getApplicationContext(), Criar_Evento.class));
+                        startActivity(new Intent(getApplicationContext(), CreateEvent.class));
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();

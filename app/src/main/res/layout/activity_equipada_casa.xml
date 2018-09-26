@@ -9,7 +9,7 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:background="@drawable/metadedocampodefutebol"
-    tools:context="com.example.brunobarros.hifootball.EquipadaCasa">
+    tools:context="com.example.brunobarros.hifootball.HomeTeam">
 
     <GridLayout
         android:background="@drawable/campodefutebol2"

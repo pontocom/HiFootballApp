@@ -2,7 +2,6 @@ package com.example.brunobarros.hifootball;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -198,8 +196,8 @@ public class linha2 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void criarevento (View view)
+    public void createEvent(View view)
     {
-        startActivity(new Intent(this, Criar_Evento.class));
+        startActivity(new Intent(this, CreateEvent.class));
     }
 }

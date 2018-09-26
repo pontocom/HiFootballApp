@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".Estado"
+        android:name=".State"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,26 +21,26 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".Criar_Evento" android:screenOrientation="portrait"/>
+        <activity android:name=".CreateEvent" android:screenOrientation="portrait"/>
         <activity
             android:name=".teste"
             android:label="@string/title_activity_teste"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Alterar_IP" android:screenOrientation="portrait">
+        <activity android:name=".ChangeIP" android:screenOrientation="portrait">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-        <activity android:name=".Historico" android:screenOrientation="portrait"/>
-        <activity android:name=".EquipadaCasa" />
-        <activity android:name=".EquipaVisitante" />
-        <activity android:name=".Anotar_Eventos" android:screenOrientation="landscape"></activity>
+        <activity android:name=".History" android:screenOrientation="portrait"/>
+        <activity android:name=".HomeTeam" />
+        <activity android:name=".VisitingTeam" />
+        <activity android:name=".AnnotateEvents" android:screenOrientation="landscape"></activity>
         <activity android:name=".Pop" android:screenOrientation="landscape" android:theme="@style/AppTheme.Pop"/>
         <activity android:name=".Login" android:theme="@style/AppTheme.Pop"/>
-        <activity android:name=".Falta" android:theme="@style/AppTheme.Pop"/>
-        <activity android:name=".Pagina_Inicial" android:theme="@style/AppTheme.Pop"/>
+        <activity android:name=".Foul" android:theme="@style/AppTheme.Pop"/>
+        <activity android:name=".InitialPage" android:theme="@style/AppTheme.Pop"/>
     </application>
 
 </manifest>

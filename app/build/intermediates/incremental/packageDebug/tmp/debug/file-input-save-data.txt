@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Mon Sep 24 16:16:40 WEST 2018
-0.baseType=DIRECTORY
-0.base=/home/juliane/code/HiFootballApp/app/build/intermediates/transforms/dexMerger/debug/16
-0.path=classes.dex
-0.set=DEX
-count=1
